@@ -1,12 +1,12 @@
 # Expoliting-Code-with-C-Reflection
-
+In this tutorial, we will learn how to use Reflection to exploit dll, We will learn how to Load DLL/Assembly in Memory and create its instance Non-Parameterized and Parameterized. and call all of the methods of class.
 ```
 
 namespace ReflectionStudent
 {
     class Program
     {
-        public static Assembly DLL = Assembly.LoadFile(@"C:\Users\umerh\source\repos\StudentProject\StudentProject\bin\Debug\StudentProject.dll");
+        public static Assembly DLL = Assembly.LoadFile(@"PATH\TO\StudentProject.dll");
         public static Type myType = DLL.GetType("StudentProject.Student");
 
         static void Main(string[] args)
